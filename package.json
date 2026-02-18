@@ -6,8 +6,9 @@
   "scripts": {
     "start": "serve .",
     "dev": "live-server --port=3000",
-    "build": "echo 'No build step required for this static site'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'Build completed'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "echo 'Vercel build completed'"
   },
   "repository": {
     "type": "git",
