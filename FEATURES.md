@@ -94,7 +94,14 @@ Prehtagonist-profile/
 │   └── documents/      # Document files
 ├── server.js           # Node.js server for local development
 ├── package.json        # Project dependencies
+<<<<<<< HEAD
 ├── vercel.json         # Vercel deployment configuration
+=======
+├── deploy.sh           # Deployment script for Unix systems
+├── deploy.bat          # Deployment script for Windows
+├── start.sh            # Startup script for Unix systems
+├── start.bat           # Startup script for Windows
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 ├── .gitignore          # Git ignore file
 ├── README.md           # Project documentation
 ├── FEATURES.md         # Features overview (this file)
@@ -104,7 +111,11 @@ Prehtagonist-profile/
 ## 🚀 Deployment Ready
 - Optimized for static hosting services
 - Ready for GitHub Pages, Netlify, Vercel
+<<<<<<< HEAD
 - Automated deployment configuration included
+=======
+- Automated deployment scripts included
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 - Cross-browser compatibility
 
 ## 🌐 Web3 Integration

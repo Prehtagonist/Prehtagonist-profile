@@ -85,6 +85,7 @@ document.querySelectorAll('.tab-button').forEach(button => {
     });
 });
 
+<<<<<<< HEAD
 // Stats counter animation - REMOVED with achievements section
 // function animateStats() {
 //     const statElements = document.querySelectorAll('.stat-number');
@@ -105,6 +106,28 @@ document.querySelectorAll('.tab-button').forEach(button => {
 //         }, 16);
 //     });
 // }
+=======
+// Stats counter animation
+function animateStats() {
+    const statElements = document.querySelectorAll('.stat-number');
+    
+    statElements.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const duration = 2000; // Animation duration in ms
+        const increment = target / (duration / 16); // 60fps approximation
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            stat.textContent = Math.floor(current).toLocaleString();
+        }, 16);
+    });
+}
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 
 // Intersection Observer for scroll animations
 const observerOptions = {
@@ -117,7 +140,14 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             
+<<<<<<< HEAD
             
+=======
+            // Trigger stats animation when achievements section comes into view
+            if (entry.target.id === 'achievements') {
+                animateStats();
+            }
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
         }
     });
 }, observerOptions);
@@ -142,9 +172,15 @@ function parallax() {
     posX += (mouseX - posX) / 20;
     posY += (mouseY - posY) / 20;
     
+<<<<<<< HEAD
     const mainElements = document.querySelectorAll('.main-content, .main-title, .main-subtitle, .main-avatar');
     
     mainElements.forEach(element => {
+=======
+    const heroElements = document.querySelectorAll('.hero-content, .hero-title, .hero-subtitle, .hero-avatar');
+    
+    heroElements.forEach(element => {
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
         const speedX = parseFloat(element.getAttribute('data-speed-x')) || 0.02;
         const speedY = parseFloat(element.getAttribute('data-speed-y')) || 0.02;
         
@@ -270,10 +306,17 @@ window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     
     if (window.scrollY > 50) {
+<<<<<<< HEAD
         navbar.style.background = 'rgba(0, 0, 0, 0.95)';
         navbar.style.backdropFilter = 'blur(15px)';
     } else {
         navbar.style.background = 'rgba(0, 0, 0, 0.9)';
+=======
+        navbar.style.background = 'rgba(10, 14, 23, 0.95)';
+        navbar.style.backdropFilter = 'blur(15px)';
+    } else {
+        navbar.style.background = 'rgba(10, 14, 23, 0.9)';
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
         navbar.style.backdropFilter = 'blur(10px)';
     }
 });
@@ -309,6 +352,7 @@ function updateFollowerCount() {
 // Update follower count periodically
 setInterval(updateFollowerCount, 30000); // Update every 30 seconds
 
+<<<<<<< HEAD
 // 3D Tilt Effect for Avatar
 function initAvatarTilt() {
     const avatarContainer = document.querySelector('.avatar-container');
@@ -343,10 +387,13 @@ function initAvatarTilt() {
     });
 }
 
+=======
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 // Initialize everything when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Prehtagonist Portfolio loaded successfully!');
     
+<<<<<<< HEAD
     // Initialize avatar tilt effect
     initAvatarTilt();
     
@@ -361,4 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Current body background-image:', bgStyle);
         console.log('Background now uses CSS gradients and crimson theme');
     }, 1500);
+=======
+    // Add any additional initialization code here
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 });

@@ -54,15 +54,32 @@ The site is ready for deployment to any static hosting service:
 - Vercel
 - Any traditional web hosting service
 
+<<<<<<< HEAD
+=======
+### Automated Deployment to GitHub:
+
+1. Make sure you have Git installed on your system
+2. Update the repository URL in deploy.sh or deploy.bat if needed
+3. Run the appropriate deployment script:
+   - On Windows: Double-click deploy.bat
+   - On Mac/Linux: Run `./deploy.sh` from the terminal
+
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 ### Deploy to GitHub Pages:
 1. Push your code to the repository
 2. Enable GitHub Pages in your repository settings
 3. Select the source (usually the main branch)
 
+<<<<<<< HEAD
 ### Deploy to Vercel:
 1. Install Vercel CLI: `npm install -g vercel`
 2. Run `vercel` in the project directory
 3. Follow the prompts to deploy
+=======
+### Deploy to Netlify:
+1. Drag and drop the project folder to Netlify's deploy area
+2. Or connect your GitHub repository to Netlify
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 
 ## Customization
 
@@ -80,8 +97,11 @@ Prehtagonist-profile/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles and animations
 ├── script.js           # JavaScript functionality
+<<<<<<< HEAD
 ├── vercel.json         # Vercel deployment configuration
 ├── package.json        # Project dependencies
+=======
+>>>>>>> da896e0759fc94e4768a0678d9a0016dba9bbc77
 └── README.md           # Project documentation
 ```
 
