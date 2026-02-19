@@ -142,9 +142,9 @@ function parallax() {
     posX += (mouseX - posX) / 20;
     posY += (mouseY - posY) / 20;
     
-    const heroElements = document.querySelectorAll('.hero-content, .hero-title, .hero-subtitle, .hero-avatar');
+    const mainElements = document.querySelectorAll('.main-content, .main-title, .main-subtitle, .main-avatar');
     
-    heroElements.forEach(element => {
+    mainElements.forEach(element => {
         const speedX = parseFloat(element.getAttribute('data-speed-x')) || 0.02;
         const speedY = parseFloat(element.getAttribute('data-speed-y')) || 0.02;
         
